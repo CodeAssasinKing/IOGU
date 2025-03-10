@@ -26,7 +26,13 @@ h1, h2, h3, p, div {
     position: relative;
     background-color: green;
     width: 100%;
-    height: 80vh;
+    height: auto;
+}
+
+@media(max-width:768px){
+  #particles-js{
+    height: 120vh;
+  }
 }
 
 .particles {
@@ -320,4 +326,111 @@ footer {
 #effect{
   background-color: rgba(0,0,0,0.8);
   height: 100%;
+}
+
+/* header */
+.navbar {
+  background-color: #3A882F; /* University Green */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand span{
+  text-wrap:wrap;
+}
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+.company-logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+.company-logos img {
+  height: 40px;
+}
+.navbar-nav {
+  margin: auto;
+}
+.nav-item a {
+  color: white;
+}
+.right-logo img {
+  height: 50px;
+}
+
+.dropdown-menu a{
+  color: black;
+}
+
+.dropdown-menu a:hover{
+  color: white;
+  background-color: #3A882F;
+}
+
+
+
+/* clock */
+.clocks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#clock {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.calendar {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 200px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  color: orange;
+  font-size: 12px;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  font-size: 12px;
+}
+.day {
+  padding: 6px;
+  border-radius: 4px;
+}
+.day.current {
+  background: lightblue;
+  font-weight: bold;
+}
+.day.inactive {
+  color: lightgray;
 }
