@@ -370,6 +370,11 @@ footer {
   color: black;
 }
 
+.dropdown-menu{
+ background-color: rgba(255, 255, 255, 0.3);
+}
+
+
 .dropdown-menu a:hover{
   color: white;
   background-color: #3A882F;
