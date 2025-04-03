@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="./static/css/bootstrap-icons.css">
+    <style>
+
+        .table th, .table td {
+        vertical-align: middle;
+        }
+        .table-header {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black !important;
+        }
+        .green-text {
+        color: green !important;
+        }
+        .blue-text {
+        color: blue !important;
+        }
+
+        .table a{
+        text-decoration: none;
+        color: black;
+        }
+
+        .table a:hover{
+        color: blue;
+        }
+    </style>
 </head>
 <body>
 
@@ -84,48 +110,63 @@
     </div>
 </nav>
 
+
 <header style="height: 80vh; overflow: hidden;  position: relative;">
     <div class="position-absolute w-100 h-100" style="z-index: 100; background-color: rgba(0, 0, 0, 0.2);">
-        <p class="position-absolute header-text">Bilim edarasy <br> barada maglumat</p>
+        <p class="position-absolute header-text">Yolbascylar <br></p>
         <p class="position-absolute header-views">151 <i class="bi bi-eye-fill"></i></p>
     </div>
     <img src="./images/bilim_header_img.jpeg" alt="Header Image" width="100%" height="100%" style="object-fit: contain; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" class="img-fluid">    
 </header>
 
 
-<section id="main-information">
-    <center><h1>Esasy maglumatlar</h1></center>
-    <p class="text">Uniwersitetin ady</p>
-    <ul>
-        <li>Doly ady: Yagsygeldi Kakayew adyndaky Halkara <br> nebit we gaz uniwersiteti</li>
-        <li>Gysgaldylan ady: HNGU</li>
-        <li>Inlis dilinde ady: Yagshygeldi Kakayew International oil and gas university</li>
-        <li>Inlis dilinde gysgaldylan ady: IOGU</li>
-    </ul>
-    <p class="text">Doredilen senesi</p>
-    <ul>
-        <li>2012 yylyn 25-nji mayy</li>
-        <li>Salgysy: 744036, Turkmenistan, Ashgabat s, Arcabil sayoly</li>
-    </ul>
-    <p class="text">Habarlaşmak ucin maglumatlar</p>
-    <ul>
-        <li>Kabulhana tel: (+993 12) 39-13-00, 39-13-01</li>
-        <li>Faks: (+993 12) 48-97-29, 39-14-00</li>
-        <li>Email: iuog@sanly.tm</li>
-        <li>Web sayty: iogu.edu.tm</li>
-    </ul>
-    <p class="text">Talyplar ucin 2023-2024-nji okuw yyly ucin toleg bank rekwiziti</p>
-    <ul>
-        <li>S/b 104111000120;</li>
-        <li>H/b 23201934150643400209000</li>
-        <li>“Türkmenistan” DTB Aşgabat ş.;</li>
-        <li>MFO 390101506;</li>
-        <li>K/h 21101934110100900009000</li>
-    </ul>
-    <p class="text">Okuw tolegi -7820.00 manat</p>
+<div class="container mt-5">
+    <h1 class="table-header text-center">Uniwersitetiň ýolbaşçylary</h1>
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>T/b</th>
+          <th>F.A.Aa</th>
+          <th>Wezipesi</th>
+          <th>Telefon</th>
+          <th>Elektron poçtasy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="blue-text">Atamanyrat Baýrammyrat Yaylymowiç</td>
+          <td class="green-text">REKTOR, T.Y.D.</td>
+          <td>(+99312)39-13-00</td>
+          <td><a href="mailto:rector@ioglu.edu.tm">rector@ioglu.edu.tm</a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="blue-text">Hudayberdenow Salyh Nuryýewiç</td>
+          <td class="green-text">OKUW IŞLERI BOÝUNÇA PROREKTOR</td>
+          <td>(+99312)39-13-02</td>
+          <td><a href="mailto:q.prorektor@ioglu.edu.tm">q.prorektor@ioglu.edu.tm</a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="blue-text">Amanýazow Ýakupgeldi Gulgeldiýewiç</td>
+          <td class="green-text">YLYM IŞLERI BOÝUNÇA PROREKTOR</td>
+          <td>(+99312)39-13-02</td>
+          <td><a href="mailto:iogus.scientific@sanly.tm">iogus.scientific@sanly.tm</a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="blue-text">Babayew Marly</td>
+          <td class="green-text">OKUW BÖLÜMINIŇ BAŞLYGY, T.Y.K.</td>
+          <td>(+99312)39-13-05</td>
+          <td><a href="mailto:ag.charyyev@gmail.com">ag.charyyev@gmail.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-</section>
-<p class="text news">News</p>
+
+<p class="text news">News</p><br>
 <div class="container mt-5 mb-5" >
     <div class="row">
         <div class="col-12 col-md-5">
@@ -149,6 +190,7 @@
     </div>
     <p class="text news2 mb-5">News</p>
 </div>
+
 
 
 <footer class="m-0 p-0">
@@ -302,6 +344,9 @@
 
     renderCalendar();
     </script>
-    <script src="./static/js/lang.js"></script>
+
+  <script src="./static/js/bootstrap.bundle.min.js.js"></script>
+  <script src="./static/js/lang.js"></script>
+
 </body>
 </html>
