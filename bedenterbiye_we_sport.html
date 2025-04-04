@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedenterbiye</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/bootstrap-icons.css">
+    <style>
+         .paginator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .page-number {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .page-number.active {
+            background: linear-gradient(to bottom, #ff8800, #cc5500);
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            height: 5px;
+            background: linear-gradient(to right, #ff8800, #cc5500);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+     
+
+<!-- Top Logos -->
+<div class="company-logos" style="background-color: #3A882F;">
+    <img src="images/testimonials.png" alt="Company 1">
+    <img src="images/testimonials2.jpeg" alt="Company 2">
+    <img src="images/testimonials3.png" alt="Company 3">
+    <img src="images/testimonials4.jpeg" alt="Company 4">
+    <img src="images/testimonials5.png" alt="Company 1">
+    <img src="images/testimonials6.jpeg" alt="Company 2">
+    <img src="images/testimonials7.jpeg" alt="Company 3">
+    <img src="images/testimonials8.png" alt="Company 4">
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <!-- Left Logo and Name -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="University Logo">
+            <span style="color: #00FF00;">IOGU <br><span class="text-white"> International Oil and Gas University </span></span>
+        </a>
+
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links Centered -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Baş sahypa</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Uniwersitet</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Departments</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Bilim</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Courses</a></li>
+                        <li><a class="dropdown-item" href="#">Research</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Ylym</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Courses</a></li>
+                        <li><a class="dropdown-item" href="#">Research</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Täzelikler</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bildirişler</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Habarlaşmak üçin</a></li>
+                <li class="nav-item d-flex align-items-center">
+                    <a href="#" id="langToggle" style="text-decoration: none; display: flex; align-items: center;">
+                        <img id="langImage" src="/images/logo.png" alt="" style="width: 30px; height: 30px; margin-right: 5px;">
+                        <span id="langText" class="text-white">TM</span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+
+        <!-- Right Logo -->
+        <a class="right-logo" href="#">
+            <img src="images/right_logo.png" alt="Right Logo">
+        </a>
+    </div>
+</nav>
+
+
+<header style="height: 80vh; overflow: hidden;  position: relative;">
+    <div class="position-absolute w-100 h-100" style="z-index: 100; background-color: rgba(0, 0, 0, 0.2);">
+        <p class="position-absolute header-text">Bedenterbiye <br> we sport</p>
+        <p class="position-absolute header-views">151 <i class="bi bi-eye-fill"></i></p>
+    </div>
+    <img src="./images/bilim_header_img.jpeg" alt="Header Image" width="100%" height="100%" style="object-fit: contain; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" class="img-fluid">    
+</header>
+
+<section>
+    <center><h1>Bildirisler</h1></center>
+    <div class="d-flex justify-content-center align-items-center w-100" style="flex-direction: row; flex-wrap: wrap;;">
+        <div class="container flex-container">
+            <img src="./images/sport1.jpeg" alt="" class="img-fluid">
+            <div class="text-button">
+                <label class="text">Yaksygedi Kakayew adyndaky halkara nebit we gaz uniwersiteti <br> <span style="font-size: 15px;">151 <i class="bi bi-eye-fill"></i></span></label>
+                <a href="" class="btn btn-primary">Ginisleyin</a>
+            </div>
+        </div>
+        <div class="container flex-container">
+            <img src="./images/sport2.jpeg" alt="" class="img-fluid">
+            <div class="text-button">
+                <label class="text">Yaksygedi Kakayew adyndaky halkara nebit we gaz uniwersiteti <br> <span style="font-size: 15px;">151 <i class="bi bi-eye-fill"></i></span></label>
+                <a href="" class="btn btn-primary">Ginisleyin</a>
+            </div>
+        </div>
+        <div class="container flex-container">
+            <img src="./images/sport1.jpeg" alt="" class="img-fluid">
+            <div class="text-button">
+                <label class="text">Yaksygedi Kakayew adyndaky halkara nebit we gaz uniwersiteti <br> <span style="font-size: 15px;">151 <i class="bi bi-eye-fill"></i></span></label>
+                <a href="" class="btn btn-primary">Ginisleyin</a>
+            </div>
+        </div>
+        <div class="container flex-container">
+            <img src="./images/sport2.jpeg" alt="" class="img-fluid">
+            <div class="text-button">
+                <label class="text">Yaksygedi Kakayew adyndaky halkara nebit we gaz uniwersiteti <br> <span style="font-size: 15px;">151 <i class="bi bi-eye-fill"></i></span></label>
+                <a href="" class="btn btn-primary">Ginisleyin</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="paginator">
+        <div class="progress-bar"></div>
+        <div class="page-number active" data-index="1">1</div>
+        <div class="page-number" data-index="2">2</div>
+        <div class="page-number" data-index="3">3</div>
+        <div class="page-number" data-index="4">4</div>
+        <div class="page-number" data-index="5">5</div>
+        <div class="page-number" data-index="6">6</div>
+        <div class="page-number" data-index="7">7</div>
+        <div class="page-number" data-index="8">8</div>
+        <div class="page-number" data-index="9">9</div>
+        <div class="page-number" data-index="10">10</div>
+    </div>
+
+</section>
+
+
+
+<p class="text news">News</p>
+<div class="container mt-5 mb-5" >
+    <div class="row">
+        <div class="col-12 col-md-5">
+            <div class="image-container">
+                <img src="./images/edara_news_image2.jpeg" class="img-fluid" alt="News Image 1">
+            </div>
+        </div>
+
+        <!-- Vertical text placed between the two images -->
+        <div class="col-12 col-md-2 text-center d-flex flex-column justify-content-center">
+            <div class="vertical-text">
+                <p>Sonkular</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <div class="image-container">
+                <img src="./images/edara_news_image2.jpeg" class="img-fluid" alt="News Image 2">
+            </div>
+        </div>
+    </div>
+    <p class="text news2 mb-5">News</p>
+</div>
+
+
+<footer class="m-0 p-0">
+    <div id="effect">
+    <div class="row" style="height: 90%;">
+        <div class="col-lg-5 h-100">
+            <div class="d-flex justify-content-center align-items-center m-5 p-3 visitors">
+                <h3 class="text-end">Visitors</h3>
+                <div class="row">
+                    <div class="d-flex col justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex col justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex col justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex col justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/turkmenistanflag.png" alt="" class="flag m-2">
+                            <p class="text-center m-2">Turkmenistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m-5">
+            <h3>Contact us</h3>
+                <p>Адрес: 744036, Туркменистан, г. Ашхабад, проспект Арчабил, 8</p>
+                <p>Тел: (+993 12) 391300</p>
+                <p>Факс: (+993 12) 391400</p>
+                <p>Веб-сайт: iogu.edu.tm</p>
+                <p>E-mail: iuog@sanly.tm</p>
+        </div>
+        <div class="col clocks">
+            <div id="clock"></div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevMonth">&#9664;</button>
+                    <span id="monthYear"></span>
+                    <button id="nextMonth">&#9654;</button>
+                </div>
+                <div class="days-of-week">
+                    <div>DU</div><div>SI</div><div>ÇA</div><div>PE</div><div>AN</div><div>ŞE</div><div>ÝE</div>
+                </div>
+                <div class="days"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-end align-items-end" style="border-top: 1px solid #ccc;">
+        <div class="col text-center ">2025 all rights reserved</div>
+    </div>
+</div>
+</footer>
+    <script src="./static/js/bootstrap.bundle.min.js.js"></script>
+    <script>
+         const clockElement = document.getElementById("clock");
+    const monthYearElement = document.getElementById("monthYear");
+    const daysContainer = document.querySelector(".days");
+    const prevMonthBtn = document.getElementById("prevMonth");
+    const nextMonthBtn = document.getElementById("nextMonth");
+
+    let currentDate = new Date();
+
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        clockElement.textContent = `${hours} : ${minutes} : ${seconds}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function renderCalendar() {
+        daysContainer.innerHTML = "";
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth();
+
+        const monthNames = ["Ýanwar", "Fewral", "Mart", "Aprel", "Maý", "Iýun", "Iýul", "Awgust", "Sentýabr", "Oktýabr", "Noýabr", "Dekabr"];
+        monthYearElement.textContent = `${monthNames[month]}, ${year}`;
+
+        const firstDayOfMonth = new Date(year, month, 1).getDay(); 
+        const lastDateOfMonth = new Date(year, month + 1, 0).getDate(); 
+        const lastDayOfPrevMonth = new Date(year, month, 0).getDate(); 
+
+        let blanks = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1; 
+
+        for (let i = blanks; i > 0; i--) {
+            const dayElement = document.createElement("div");
+            dayElement.classList.add("day", "inactive");
+            dayElement.textContent = lastDayOfPrevMonth - i + 1;
+            daysContainer.appendChild(dayElement);
+        }
+
+        for (let day = 1; day <= lastDateOfMonth; day++) {
+            const dayElement = document.createElement("div");
+            dayElement.classList.add("day");
+            dayElement.textContent = day;
+
+            const today = new Date();
+            if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                dayElement.classList.add("current");
+            }
+
+            daysContainer.appendChild(dayElement);
+        }
+    }
+
+    prevMonthBtn.addEventListener("click", () => {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        renderCalendar();
+    });
+
+    nextMonthBtn.addEventListener("click", () => {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar();
+    });
+
+    renderCalendar();
+    </script>
+    <script src="./static/js/lang.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pageNumbers = document.querySelectorAll(".page-number");
+            const progressBar = document.querySelector(".progress-bar");
+
+            function updatePagination(index) {
+                // Remove active class from all numbers
+                pageNumbers.forEach(num => num.classList.remove("active"));
+
+                // Add active class to selected number
+                const activePage = document.querySelector(`.page-number[data-index='${index}']`);
+                activePage.classList.add("active");
+
+                // Move progress bar under selected number
+                progressBar.style.width = activePage.offsetWidth + "px";
+                progressBar.style.transform = `translateX(${activePage.offsetLeft}px)`;
+            }
+
+            // Add click event to each page number
+            pageNumbers.forEach(num => {
+                num.addEventListener("click", function() {
+                    const index = this.getAttribute("data-index");
+                    updatePagination(index);
+                });
+            });
+
+            // Initialize the progress bar position
+            updatePagination(1);
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
