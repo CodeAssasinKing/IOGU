@@ -7,19 +7,19 @@
 body {
     width: 100%;
     height:auto;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Alexandria', sans-serif;
     overflow-x: hidden;
 }
 
 @font-face {
   font-family: 'Paytone One'; 
-  src: url('PaytoneOne-Regular.ttf') format('truetype');
+  src: url('./Alexandria-VariableFont_wght.ttf') format('truetype');
   font-weight: normal; 
   font-style: normal;
 }
 
 h1, h2, h3, p, div {
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Alexandria', sans-serif;
 }
 
 #particles-js {
