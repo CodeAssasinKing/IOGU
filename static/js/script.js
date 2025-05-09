@@ -49,39 +49,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         },
       });
     
-      //here is first slider 
-      const headerswiper = new Swiper(".swiper-header", {
-        effect: 'coverflow',
-        direction: "horizontal",
-        grabCursor: true,
-        centeredSlides: false,
-        slidesPerView: 2,
-        loop:true,
-        coverflowEffect: {
-          rotate:0,      // Rotation angle for slides
-          stretch: 0,      // Stretch space between slides (in px)
-          depth: 0,      // Depth offset in px (slides further away appear smaller)
-          modifier: 0,     // Effect multiplier (increase for more extreme effect)
-          slideShadows: true, // Enable shadows on slides
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        on: {
-            slideChange: function () {
-              // Get the active slide's image element
-              const activeSlideImage = this.slides[this.activeIndex].querySelector('.header_image');
-        
-              // Get the image source URL
-              const imageUrl = activeSlideImage.getAttribute('src');
-        
-              // Set the background image of the header section
-              const headerSection = document.getElementById('headerSection');
-              headerSection.style.backgroundImage = `url(${imageUrl})`;
-            }
-          },
-    });
-   
-
 })
+
+
+
+
+
+
