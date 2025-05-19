@@ -246,7 +246,7 @@ link{
 footer {
   color:white;
   width: 100%;
-  height: 45vh;
+  min-height: 45vh;
   background-image: url("../../images/footer_image.png");
   background-size: contain;
   background-position: center;
@@ -261,6 +261,7 @@ footer {
 }
 
 .visitors{
+  width: 100%;
   flex-direction: column;
    background-color: rgba(255,255,255,0.3);
    border-radius: 30px;
@@ -272,6 +273,26 @@ footer {
 #effect{
   background-color: #22222280;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    background-size: cover; /* better for mobile */
+    padding: 20px 10px;
+  }
+
+  .visitors {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+
+  .clocks {
+    margin-top: 20px;
+  }
 }
 
 /* header */
